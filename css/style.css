@@ -120,7 +120,7 @@ header nav .navbar-nav li {
   color: #000;
   background-color: #fff;
   text-align: center;
-  height: 1190px;
+  /*height: 1190px;*/
 }
 #portfolio h2 {
   font-weight: bold;
@@ -130,35 +130,127 @@ header nav .navbar-nav li {
 #portfolio p {
   font-size: 18px;
 }
-
-#portfolio img {
-  margin: 10px;
+#portfolio .portfolio-example {
+  margin: 0 auto;
 }
+/*#portfolio img {
+  margin: 10px;
+}*/
 #portfolio .browse p,
 #portfolio .browse img {
   margin: 0;
 }
-#portfolio .image {
-  /*background-image: url("http://via.placeholder.com/370x290")*/
+#portfolio .image1,
+#portfolio .image2,
+#portfolio .image3,
+#portfolio .image4,
+#portfolio .image5,
+#portfolio .image6 {
+  background-image: url("http://via.placeholder.com/370x290");
+  height: 290px;
+  width: 370px;
+  margin: 10px;
+  background-size: cover;
 }
 #portfolio .layer {
   display: none;
   background: #506083;
-  /*background: rgba(104, 120, 155, 0.5);*/
-  background: rgba(0, 0, 0, 0.5);
-
   width: 370px;
   height: 290px;
-  margin: 10px;
+  margin-left: -15px;
+  margin-top: -10px;
   text-align: center;
   color: #fff;
-  margin-top: -310px;
+  /*margin-top: -310px;*/
 }
 #portfolio .layer h4 {
   padding-top: 70px;
 }
-#portfolio .image1:hover .layer {
+#portfolio .image1:hover .layer,
+#portfolio .image2:hover .layer,
+#portfolio .image3:hover .layer,
+#portfolio .image4:hover .layer,
+#portfolio .image5:hover .layer,
+#portfolio .image6:hover .layer {
   display: block;
+}
+#portfolio .browse {
+  margin-top: 60px;
+}
+#portfolio .browse img {
+  margin-bottom: 70px;
+}
+/*
+ * Carousel
+ */
+#carousel {
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+#carousel h2 {
+  font-size: 30px;
+}
+#carousel .happy-customer-head p {
+  font-size: 18px;
+  padding-top: 18px;
+}
+[class*="example"]{
+  min-height:300px;
+}
+.example-1,
+.example-2,
+.example-3,
+.example-4
+{
+  background-size: cover;
+  background-position: center;
+}
+.example-1 {
+  /*background-image: url(https://images.unsplash.com/photo-1441829266145-6d4bfbd38eb4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&s=139a3684a679889dfdee140b2c1b7efe);*/
+  border: 2px solid red;
+}
+.example-1 img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+}
+.example-2 {
+  background-image: url(https://images.unsplash.com/photo-1430783160699-fe4203087e83?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&s=93a13f730048c97f76c217d3cf429efa);
+}
+.example-3 {
+  background-image: url(https://images.unsplash.com/photo-1441582966859-b9509c513d95?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&s=79fabf4af4e0816be12735cf192ca26e);
+}
+.example-4 {
+  background-image: url(https://images.unsplash.com/photo-1429593800333-b2dd6d671b5f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&s=cc9deebcd4df387cd5040cf757067f4c);
+}
+
+@media screen and (max-width: 1199px) {
+  #portfolio .image1,
+  #portfolio .image2,
+  #portfolio .image3,
+  #portfolio .image4,
+  #portfolio .image5,
+  #portfolio .image6 {
+    width: 320px;
+    height: 230px;
+  }
+  #portfolio .layer {
+    width: 320px;
+    height: 230px;
+  }
+  #portfolio .layer h4 {
+  padding-top: 30px;
+  }
+  #portfolio .portfolio-example {
+    margin-left: 15%;
+  }
+}  
+@media (min-width: 671px) and (max-width: 991px)  {
+  #portfolio .portfolio-example {
+    margin-left: 25%;
+  }
 }
 
 @media screen and (max-width: 770px) {
