@@ -1,0 +1,470 @@
+body {
+  font-family: Myriad, sans-serif; 
+}
+.container {
+  max-width: 1170px;
+}
+/*
+ * header
+ */
+.logo-bold {
+  font-weight: bold;
+}
+header a {
+ font-family: Myriad, sans-serif; 
+ font-size: 16px;
+}
+.navbar-inverse {
+ background-color: #0d0b11;
+ height: 84px;
+ margin: 0;
+}
+.navbar-inverse .navbar-brand {
+ margin-top: 20px;
+ color: #fff;
+}
+.navbar-nav {
+  float: right;
+}
+header nav .navbar-nav li {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+  text-decoration: none;
+  color: #ea5b58;
+}
+.navbar-inverse .navbar-nav>li>a:focus {
+  text-decoration: none;
+  color: #ea5b58;
+}
+.navbar-toggle {
+  margin-top: 25px;
+}
+/*
+ * section kalau
+ */
+#kalau {
+  background-color: #212331;
+  height: 462px;
+}
+#kalau h1 {
+  font-size: 30px;
+  color: #fff; 
+  margin-top: 105px;
+}
+#kalau p {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 42px;
+}
+#kalau .btn,
+#contact .btn {
+  font-size: 18px;
+  margin-top: 63px;
+  height: 63px;
+  width: 147px;
+}
+#contact .btn {
+  margin-top: 10px;
+  display: block;
+}
+#kalau img {
+  box-shadow: -20px 20px #64656e;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+/*
+ * section services
+ */
+#services {
+  background-color: #475a85;
+  color: #fff;
+  text-align: center;
+  height: 555px;
+}
+#services .service-head img {
+  margin: 10px auto;
+  margin-bottom: 67px;
+}
+#services h2 {
+  font-size: 30px;
+  margin-top: 64px;
+}
+#services p {
+  font-size: 18px;
+}
+#services h4 {
+  font-size: 18px;
+}
+#services .service p {
+  font-size: 14px;
+}
+/*
+ * section greatest, section touch-witch
+ */
+#greatest,
+#touch-witch {
+  background-image: url(../images/greatest.jpg);
+  color: #fff;
+  text-align: center;
+  height: 418px;
+  margin: 0;
+}
+#greatest h2,
+#touch-witch h2 {
+  font-size: 48px;
+  padding-top: 190px;
+  margin: 0;
+}
+#greatest p,
+#touch-witch p {
+  font-size: 24px;
+}
+/*
+ * portfolio
+ */
+#portfolio {
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  /*height: 1190px;*/
+}
+#portfolio h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 90px;
+} 
+#portfolio p {
+  font-size: 18px;
+}
+#portfolio .portfolio-example {
+  margin: 0 auto;
+}
+/*#portfolio img {
+  margin: 10px;
+}*/
+#portfolio .browse p,
+#portfolio .browse img {
+  margin: 0;
+}
+#portfolio .image1,
+#portfolio .image2,
+#portfolio .image3,
+#portfolio .image4,
+#portfolio .image5,
+#portfolio .image6 {
+  background-image: url("http://via.placeholder.com/370x290");
+  height: 290px;
+  width: 370px;
+  margin: 10px;
+  background-size: cover;
+}
+#portfolio .layer {
+  display: none;
+  background: #506083;
+  width: 370px;
+  height: 290px;
+  margin-left: -15px;
+  margin-top: -10px;
+  text-align: center;
+  color: #fff;
+  /*margin-top: -310px;*/
+}
+#portfolio .layer h4 {
+  padding-top: 70px;
+}
+#portfolio .image1:hover .layer,
+#portfolio .image2:hover .layer,
+#portfolio .image3:hover .layer,
+#portfolio .image4:hover .layer,
+#portfolio .image5:hover .layer,
+#portfolio .image6:hover .layer {
+  display: block;
+}
+#portfolio .browse {
+  margin-top: 60px;
+}
+#portfolio .browse img {
+  margin-bottom: 70px;
+}
+/*
+ * Carousel
+ */
+#carousel {
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+#carousel h2 {
+  font-size: 30px;
+}
+.carousel-indicators li {
+  background-color: #7b7b7b;
+  border: 1px solid #7b7b7b;
+}
+.carousel-indicators .active {
+background-color: #323232
+}
+#carousel .happy-customer-head p {
+  font-size: 18px;
+  padding-top: 18px;
+}
+[class*="example"]{
+  min-height:400px;
+}
+.example-1,
+.example-2,
+.example-3,
+.example-4
+{
+  background-size: cover;
+  background-position: center;
+}
+.content-carousel {
+  padding-top: 10%;
+}
+.content-carousel blockquote {
+  font-size: 18px;
+  text-align: left;
+  border: none;
+}
+.content-carousel p {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+}
+.person-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.example-1 .person-image {
+  background-image: url(https://k60.kn3.net/taringa/1/3/1/1/C/D/luchoman07/140.jpg);
+}
+.example-2 .person-image {
+  background-image: url(https://images.unsplash.com/7/girl-flowers.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&c…ntropy&cs=tinysrgb&w=400&h=400&fit=crop&s=50bc8f670e57974fbe83c792e922d503);
+}
+.example-3 .person-image {
+  background-image: url(http://www.revijamentor.si/wp-content/uploads/2015/05/incontrissimi.jpg);
+}
+.example-4 .person-image {
+  background-image: url(https://images.unsplash.com/photo-1429593800333-b2dd6d671b5f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&s=cc9deebcd4df387cd5040cf757067f4c);
+}
+/*
+ * section contact
+ */
+#contact {
+  background-color: #475a85;
+  height: 670px;
+  color: #fff;
+}
+#contact .contact-head h2 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 70px;
+}
+#contact .contact-head p {
+  font-size: 18px;
+  text-align: center;
+  padding: 18px 0;
+}
+#contact .contact-head img {
+  padding-bottom: 40px;
+}
+#contact .contact-head {
+  text-align: center;
+}
+#contact .office p {
+  font-size: 18px;
+}
+#contact h4 {
+  font-weight: bold;
+}
+.location {
+  margin-top: 30px;
+}
+.location img {
+  float: left;
+  margin-right: 10px;
+}
+#contact .social-media {
+  margin-top: 50px;
+}
+#contact .social-media span {
+  background-color: #c0c0c0;
+  color: #475a85;
+  border-radius: 50%;
+  transform: scale(1.0);
+  margin-right: 15px;
+  padding: 10px;
+}
+#contact .social-media span:hover {
+  background-color: #fff;
+}
+#contact form {
+  color: #747474; 
+  font-size: 18px;
+}
+#contact input {
+  width: 245px;
+  height: 60px;
+}
+#contact textarea {
+  width: 500px;
+  height: 165px;
+}
+#contact form input:first-child {
+  margin-right: 5px;
+}
+#contact input,
+#contact textarea {
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+#contact .contact-arrow {
+/*  margin-top: 70px;*/
+  float: right;
+}
+/*
+ * footer
+ */
+footer {
+  background-color: #161828;
+  height: 160px;
+  color: #76777f;
+  text-align: center;
+}
+footer p {
+  font-size: 14px;
+}
+footer .content-footer {
+  margin-top: 50px;
+}
+footer a p {
+  font-size: 20px;
+  color: #76777f;
+}
+footer a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1199px) {
+  #portfolio .image1,
+  #portfolio .image2,
+  #portfolio .image3,
+  #portfolio .image4,
+  #portfolio .image5,
+  #portfolio .image6 {
+    width: 320px;
+    height: 230px;
+  }
+  #portfolio .layer {
+    width: 320px;
+    height: 230px;
+  }
+  #portfolio .layer h4 {
+  padding-top: 30px;
+  }
+  #portfolio .portfolio-example {
+    margin-left: 15%;
+  }
+  #contact input {
+    width: 200px;
+    font-size: 14px;
+  }
+  #contact textarea {
+    width: 410px;
+    font-size: 14px
+  }
+}  
+@media (min-width: 671px) and (max-width: 991px)  {
+  #portfolio .portfolio-example {
+    margin-left: 25%;
+  }
+  .content-carousel blockquote {
+    font-size: 16px;
+  }
+  .content-carousel blockquote p {
+    font-size: 18px;
+  }
+  #contact input,
+  #contact textarea {
+    width: 330px;
+  }
+  #contact .contact-arrow {
+    margin-top: -60px;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }   
+  #kalau {
+    height: 800px;
+    text-align: center;
+  }
+  #kalau img {
+    margin: 50px auto;
+  }
+  #services {
+    height: 700px;
+  } 
+  #greatest,
+  #touch-witch {
+    height: 300px;
+  }
+  #greatest h2,
+  #touch-witch h2 {
+    font-size: 30px;
+    padding-top: 130px;
+  }
+  #greatest p,
+  #touch-witch p {
+    font-size: 18px;
+  }
+  .person-image {
+    width: 100px;
+    height: 100px;
+  }
+  .content-carousel blockquote {
+    font-size: 14px;
+  }
+  .content-carousel blockquote p {
+    font-size: 16px;
+  }
+  #contact {
+    height: 1000px;
+  }
+  #contact input:first-child {
+   margin-top: 20px;
+  }
+  #contact input,
+  #contact textarea {
+    width: 400px;
+  }
+}  
+@media screen and (max-width: 425px) {
+  #kalau {
+    height: 800px;
+  }
+  #services {
+    height: 700px;
+  }
+  #contact {
+    height: 1100px;
+  }
+  #contact input,
+  #contact textarea {
+    width: 200px;
+  }
+}
