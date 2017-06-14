@@ -1,11 +1,14 @@
+body {
+  font-family: Myriad, sans-serif; 
+}
 .container {
   max-width: 1170px;
 }
 /*
  * header
  */
-header .navbar-collapse {
-  /*max-width: 1170px;*/
+.logo-bold {
+  font-weight: bold;
 }
 header a {
  font-family: Myriad, sans-serif; 
@@ -58,11 +61,16 @@ header nav .navbar-nav li {
   color: #fff;
   margin-top: 42px;
 }
-#kalau .btn {
+#kalau .btn,
+#contact .btn {
   font-size: 18px;
   margin-top: 63px;
   height: 63px;
   width: 147px;
+}
+#contact .btn {
+  margin-top: 10px;
+  display: block;
 }
 #kalau img {
   box-shadow: -20px 20px #64656e;
@@ -96,21 +104,24 @@ header nav .navbar-nav li {
   font-size: 14px;
 }
 /*
- * greatest
+ * section greatest, section touch-witch
  */
-#greatest {
+#greatest,
+#touch-witch {
   background-image: url(../images/greatest.jpg);
   color: #fff;
   text-align: center;
   height: 418px;
   margin: 0;
 }
-#greatest h2 {
+#greatest h2,
+#touch-witch h2 {
   font-size: 48px;
   padding-top: 190px;
   margin: 0;
 }
-#greatest p {
+#greatest p,
+#touch-witch p {
   font-size: 24px;
 }
 /*
@@ -191,12 +202,19 @@ header nav .navbar-nav li {
 #carousel h2 {
   font-size: 30px;
 }
+.carousel-indicators li {
+  background-color: #7b7b7b;
+  border: 1px solid #7b7b7b;
+}
+.carousel-indicators .active {
+background-color: #323232
+}
 #carousel .happy-customer-head p {
   font-size: 18px;
   padding-top: 18px;
 }
 [class*="example"]{
-  min-height:300px;
+  min-height:400px;
 }
 .example-1,
 .example-2,
@@ -206,24 +224,136 @@ header nav .navbar-nav li {
   background-size: cover;
   background-position: center;
 }
-.example-1 {
-  /*background-image: url(https://images.unsplash.com/photo-1441829266145-6d4bfbd38eb4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&s=139a3684a679889dfdee140b2c1b7efe);*/
-  border: 2px solid red;
+.content-carousel {
+  padding-top: 10%;
 }
-.example-1 img {
-  width: 250px;
-  height: 250px;
+.content-carousel blockquote {
+  font-size: 18px;
+  text-align: left;
+  border: none;
+}
+.content-carousel p {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+}
+.person-image {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-size: cover;
+  background-position: center;
 }
-.example-2 {
-  background-image: url(https://images.unsplash.com/photo-1430783160699-fe4203087e83?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&s=93a13f730048c97f76c217d3cf429efa);
+.example-1 .person-image {
+  background-image: url(https://k60.kn3.net/taringa/1/3/1/1/C/D/luchoman07/140.jpg);
 }
-.example-3 {
-  background-image: url(https://images.unsplash.com/photo-1441582966859-b9509c513d95?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&s=79fabf4af4e0816be12735cf192ca26e);
+.example-2 .person-image {
+  background-image: url(https://images.unsplash.com/7/girl-flowers.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&c…ntropy&cs=tinysrgb&w=400&h=400&fit=crop&s=50bc8f670e57974fbe83c792e922d503);
 }
-.example-4 {
+.example-3 .person-image {
+  background-image: url(http://www.revijamentor.si/wp-content/uploads/2015/05/incontrissimi.jpg);
+}
+.example-4 .person-image {
   background-image: url(https://images.unsplash.com/photo-1429593800333-b2dd6d671b5f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&s=cc9deebcd4df387cd5040cf757067f4c);
+}
+/*
+ * section contact
+ */
+#contact {
+  background-color: #475a85;
+  height: 670px;
+  color: #fff;
+}
+#contact .contact-head h2 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 70px;
+}
+#contact .contact-head p {
+  font-size: 18px;
+  text-align: center;
+  padding: 18px 0;
+}
+#contact .contact-head img {
+  padding-bottom: 40px;
+}
+#contact .contact-head {
+  text-align: center;
+}
+#contact .office p {
+  font-size: 18px;
+}
+#contact h4 {
+  font-weight: bold;
+}
+.location {
+  margin-top: 30px;
+}
+.location img {
+  float: left;
+  margin-right: 10px;
+}
+#contact .social-media {
+  margin-top: 50px;
+}
+#contact .social-media span {
+  background-color: #c0c0c0;
+  color: #475a85;
+  border-radius: 50%;
+  transform: scale(1.0);
+  margin-right: 15px;
+  padding: 10px;
+}
+#contact .social-media span:hover {
+  background-color: #fff;
+}
+#contact form {
+  color: #747474; 
+  font-size: 18px;
+}
+#contact input {
+  width: 245px;
+  height: 60px;
+}
+#contact textarea {
+  width: 500px;
+  height: 165px;
+}
+#contact form input:first-child {
+  margin-right: 5px;
+}
+#contact input,
+#contact textarea {
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+#contact .contact-arrow {
+/*  margin-top: 70px;*/
+  float: right;
+}
+/*
+ * footer
+ */
+footer {
+  background-color: #161828;
+  height: 160px;
+  color: #76777f;
+  text-align: center;
+}
+footer p {
+  font-size: 14px;
+}
+footer .content-footer {
+  margin-top: 50px;
+}
+footer a p {
+  font-size: 20px;
+  color: #76777f;
+}
+footer a:hover {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1199px) {
@@ -246,38 +376,95 @@ header nav .navbar-nav li {
   #portfolio .portfolio-example {
     margin-left: 15%;
   }
+  #contact input {
+    width: 200px;
+    font-size: 14px;
+  }
+  #contact textarea {
+    width: 410px;
+    font-size: 14px
+  }
 }  
 @media (min-width: 671px) and (max-width: 991px)  {
   #portfolio .portfolio-example {
     margin-left: 25%;
   }
+  .content-carousel blockquote {
+    font-size: 16px;
+  }
+  .content-carousel blockquote p {
+    font-size: 18px;
+  }
+  #contact input,
+  #contact textarea {
+    width: 330px;
+  }
+  #contact .contact-arrow {
+    margin-top: -60px;
+    float: right;
+  }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767px) {
   .navbar-nav {
     text-align: center;
-    /*float: none;*/
-  }
-  .collapse.in {
-    
-    /*height: 330px;*/
-  }    
+  }   
   #kalau {
     height: 800px;
     text-align: center;
-    /*margin-top: 315px;*/
   }
   #kalau img {
     margin: 50px auto;
   }
   #services {
-    height: 800px;
+    height: 700px;
   } 
-  #greatest h2 {
-    font-size: 30px;
-
+  #greatest,
+  #touch-witch {
+    height: 300px;
   }
-  #greatest p {
+  #greatest h2,
+  #touch-witch h2 {
+    font-size: 30px;
+    padding-top: 130px;
+  }
+  #greatest p,
+  #touch-witch p {
     font-size: 18px;
   }
+  .person-image {
+    width: 100px;
+    height: 100px;
+  }
+  .content-carousel blockquote {
+    font-size: 14px;
+  }
+  .content-carousel blockquote p {
+    font-size: 16px;
+  }
+  #contact {
+    height: 1000px;
+  }
+  #contact input:first-child {
+   margin-top: 20px;
+  }
+  #contact input,
+  #contact textarea {
+    width: 400px;
+  }
 }  
+@media screen and (max-width: 425px) {
+  #kalau {
+    height: 800px;
+  }
+  #services {
+    height: 700px;
+  }
+  #contact {
+    height: 1100px;
+  }
+  #contact input,
+  #contact textarea {
+    width: 200px;
+  }
+}
