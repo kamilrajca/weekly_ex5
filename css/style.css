@@ -131,7 +131,6 @@ header nav .navbar-nav li {
   color: #000;
   background-color: #fff;
   text-align: center;
-  /*height: 1190px;*/
 }
 #portfolio h2 {
   font-weight: bold;
@@ -144,9 +143,6 @@ header nav .navbar-nav li {
 #portfolio .portfolio-example {
   margin: 0 auto;
 }
-/*#portfolio img {
-  margin: 10px;
-}*/
 #portfolio .browse p,
 #portfolio .browse img {
   margin: 0;
@@ -305,6 +301,14 @@ background-color: #323232
   margin-right: 15px;
   padding: 10px;
 }
+#contact .social-media .fa {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+#contact .social-media .fa-facebook {
+  padding: 10px 14px;
+}
 #contact .social-media span:hover {
   background-color: #fff;
 }
@@ -443,7 +447,7 @@ footer a:hover {
     font-size: 16px;
   }
   #contact {
-    height: 1000px;
+    height: 1050px;
   }
   #contact input:first-child {
    margin-top: 20px;
@@ -451,6 +455,9 @@ footer a:hover {
   #contact input,
   #contact textarea {
     width: 400px;
+  }
+  #contact .contact-arrow {
+    margin-top: -60px;
   }
 }  
 @media screen and (max-width: 425px) {
@@ -461,7 +468,7 @@ footer a:hover {
     height: 700px;
   }
   #contact {
-    height: 1100px;
+    height: 1130px;
   }
   #contact input,
   #contact textarea {
