@@ -536,6 +536,9 @@ footer a:hover {
     /*width: 400px;*/
     margin: 0 auto;
   }
+  .person-image {
+    margin-left: 30px;
+  }
   .content-carousel blockquote, 
   .content-carousel p {
     text-align: none;
