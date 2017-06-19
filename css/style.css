@@ -458,11 +458,21 @@ footer a:hover {
     box-shadow: none;
   }
   #services {
-    height: 750px;
+    height: 1100px;
   }
   .service {
     padding-bottom: 50px;
   }
+/*  #portfolio .image1,
+  #portfolio .image2,
+  #portfolio .image3,
+  #portfolio .image4,
+  #portfolio .image5,
+  #portfolio .image6 {
+    height: 290px;
+    width: 100%;
+    margin: 10px 0;
+  }*/
   #greatest,
   #touch-witch {
     height: 300px;
@@ -530,7 +540,7 @@ footer a:hover {
     height: 800px;
   }
   #services {
-    height: 800px;
+    height: 1200px;
   }
   .carousel-inner {
     /*width: 400px;*/
