@@ -142,9 +142,10 @@ header nav .navbar-nav li {
 #portfolio p {
   font-size: 18px;
 }
-#portfolio .portfolio-example {
+/*#portfolio .portfolio-example {
+  min-width: 300px;
   margin: 0 auto;
-}
+}*/
 #portfolio .browse p,
 #portfolio .browse img {
   margin: 0;
@@ -275,6 +276,13 @@ background-color: #323232
   background-image: url(https://images.unsplash.com/photo-1429593800333-b2dd6d671b5f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop&s=cc9deebcd4df387cd5040cf757067f4c);
 }
 /*
+ * section map
+ */
+#map iframe {
+  border:0; 
+  pointer-events: none;
+}
+/*
  * section contact
  */
 #contact {
@@ -355,8 +363,10 @@ background-color: #323232
   margin-bottom: 10px;
 }
 #contact .contact-arrow {
-/*  margin-top: 70px;*/
   float: right;
+}
+.img-responsive {
+  margin: 0 auto; 
 }
 /*
  * footer
@@ -399,7 +409,7 @@ footer a:hover {
   padding-top: 30px;
   }
   #portfolio .portfolio-example {
-    margin-left: 15%;
+    /*margin-left: 15%;*/
   }
   #contact input {
     width: 200px;
@@ -410,14 +420,16 @@ footer a:hover {
     font-size: 14px
   }
 }  
+
 @media (min-width: 671px) and (max-width: 991px)  {
-  #portfolio .portfolio-example {
-    margin-left: 25%;
+  .person-image {
+    width: 150px;
+    height: 150px;
   }
   .content-carousel blockquote {
     font-size: 16px;
   }
-  .content-carousel blockquote p {
+  .content-carousel p {
     font-size: 18px;
   }
   #contact input,
@@ -446,7 +458,7 @@ footer a:hover {
     box-shadow: none;
   }
   #services {
-    height: 700px;
+    height: 750px;
   }
   .service {
     padding-bottom: 50px;
@@ -467,6 +479,7 @@ footer a:hover {
   .person-image {
     width: 100px;
     height: 100px;
+    margin: 0 auto;
   }
   .content-carousel blockquote {
     font-size: 14px;
@@ -476,6 +489,17 @@ footer a:hover {
   }
   #contact {
     height: 1050px;
+  }
+  #contact .office p {
+  font-size: 14px;
+  }
+  .office {
+    width: 100%
+    margin: 0 auto;
+  }
+  .social-media {
+    width: 60%;
+    margin: 0 auto;
   }
   #contact input:first-child {
    margin-top: 20px;
@@ -487,13 +511,26 @@ footer a:hover {
   #contact .contact-arrow {
     margin-top: -60px;
   }
+  #kalau .btn,
+  #contact .btn {
+    font-size: 14px;
+    margin-top: 43px;
+    height: 53px;
+    width: 107px;
+  }
+  #contact .contact-arrow {
+    transform: scale(0.7);
+    float: left;
+    margin-left: 120px;
+
+  }
 }  
 @media screen and (max-width: 425px) {
   #kalau {
     height: 800px;
   }
   #services {
-    height: 700px;
+    height: 800px;
   }
   .carousel-inner {
     /*width: 400px;*/
@@ -509,5 +546,9 @@ footer a:hover {
   #contact input,
   #contact textarea {
     width: 200px;
+  }
+  .form-message {
+    margin: 0 auto;
+    width: 80%
   }
 }
