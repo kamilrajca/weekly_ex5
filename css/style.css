@@ -14,9 +14,11 @@ header a {
  font-family: Myriad, sans-serif; 
  font-size: 16px;
 }
+.navbar-header {
+  height: 84px;
+}
 .navbar-inverse {
  background-color: #0d0b11;
- height: 84px;
  margin: 0;
 }
 .navbar-inverse .navbar-brand {
@@ -153,12 +155,31 @@ header nav .navbar-nav li {
 #portfolio .image4,
 #portfolio .image5,
 #portfolio .image6 {
-  background-image: url("http://via.placeholder.com/370x290");
   height: 290px;
   width: 370px;
   margin: 10px;
   background-size: cover;
+  background-position: center;
 }
+#portfolio .image1 {
+  background-image: url(https://images.unsplash.com/photo-1429292394373-ddbcc6bb7468?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=370&h=290&fit=crop&s=dd23c03dfa42f357334531ebf53c534d); 
+}
+#portfolio .image2 {
+  background-image: url(https://images.unsplash.com/photo-1467576666870-b63f8af9f942?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=370&h=290&fit=crop&s=03052d97bdb27dbbb76e0ad5939e5a4b);
+}
+#portfolio .image3 {
+  background-image: url(https://images.unsplash.com/photo-1487931193993-0f9bf9a89396?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=370&h=290&fit=crop&s=7827d02f52f6326ce9aacd0adb8d5fcc);
+}
+#portfolio .image4 {
+  background-image: url(https://images.unsplash.com/photo-1483569104912-1a76dd067244?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=370&h=290&fit=crop&s=4664d9c20ddbeaa19ab1e1abc59f1131);
+}
+#portfolio .image5 {
+  background-image: url(https://images.unsplash.com/photo-1485811732563-e65caadf6024?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=370&h=290&fit=crop&s=eff367a0ac597824c64d0c6da296fffc);
+}
+#portfolio .image6 {
+  background-image: url(https://images.unsplash.com/photo-1444836924305-ef793c82a9ea?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=370&h=290&fit=crop&s=b7c85a9295b8953647710771bdef6b4d);
+}
+
 #portfolio .layer {
   display: none;
   background: #506083;
@@ -410,19 +431,26 @@ footer a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .navbar-nav {
+  .navbar-nav li a {
     text-align: center;
-  }   
+  }
+  .navbar-nav {
+    float: none;
+  }
   #kalau {
     height: 800px;
     text-align: center;
   }
   #kalau img {
     margin: 50px auto;
+    box-shadow: none;
   }
   #services {
     height: 700px;
-  } 
+  }
+  .service {
+    padding-bottom: 50px;
+  }
   #greatest,
   #touch-witch {
     height: 300px;
@@ -466,6 +494,14 @@ footer a:hover {
   }
   #services {
     height: 700px;
+  }
+  .carousel-inner {
+    /*width: 400px;*/
+    margin: 0 auto;
+  }
+  .content-carousel blockquote, 
+  .content-carousel p {
+    text-align: none;
   }
   #contact {
     height: 1130px;
