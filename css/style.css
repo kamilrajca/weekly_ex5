@@ -209,6 +209,12 @@ header nav .navbar-nav li {
 #portfolio .browse img {
   margin-bottom: 70px;
 }
+/*flex*/
+.portfolio-example {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 /*
  * Carousel
  */
